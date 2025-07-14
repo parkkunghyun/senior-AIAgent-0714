@@ -1,12 +1,74 @@
-# React + Vite
+# 🧓 Senior AI Agent - 복지 정보 검색 & 추천 플랫폼
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Senior AI Agent**는 시니어 세대가 복잡한 정부 복지 정책을 쉽고 빠르게 이해하고, 관련 유튜브 영상과 정보를 한 곳에서 확인할 수 있도록 돕는 AI 기반 웹 플랫폼입니다.
 
-Currently, two official plugins are available:
+## 🎯 프로젝트 목적
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 정보 접근성이 낮은 **시니어 세대**를 위해, 정부 복지·정책 정보를 영상과 챗봇을 통해 **쉽게 전달**합니다.
+- 단순한 키워드 검색이 아닌, **GPT 기반 질문응답 + 영상 추천 + 관련 링크 제공**을 통해 사용자의 맥락에 맞는 정보를 제공합니다.
+- 디지털 노마드로서 SaaS 서비스를 만들어 실제 운영·배포·수익화까지 해보는 것을 목표로 합니다.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 주요 기능
+
+| 기능 | 설명 |
+|------|------|
+| 🔍 복지 영상 검색 | 유튜브 API를 통해 '기초연금', '출산지원금' 등 복지 관련 최신 영상 검색 |
+| 💬 AI 에이전트 | GPT에 질문하면 관련 복지 설명 + 유튜브 영상 + 링크까지 추천 |
+| 📝 블로그 페이지 | 직접 작성한 복지 요약글 및 정보를 리스트 형태로 열람 가능 (준비 중) |
+| 🌐 반응형 UI | 모바일 환경에서도 접근 가능한 깔끔한 레이아웃 |
+
+---
+
+## ⚙️ 사용 기술
+
+- **Frontend**: React (Vite 기반), Tailwind CSS
+- **Routing**: react-router-dom
+- **API 연동**:
+  - YouTube Data API v3
+  - OpenAI GPT API (예정)
+- **Deployment (예정)**: Vercel or GCP
+- **버전 관리**: Git + GitHub
+
+---
+
+## ✅ 현재까지 구현된 기능
+
+- [x] Vite + React 프로젝트 세팅
+- [x] Tailwind CSS 적용
+- [x] 영상 검색 기능 구현 (YouTube API 연동)
+- [x] 키워드 버튼 및 검색창 구현
+- [x] 검색 결과 썸네일 클릭 시 모달로 영상 재생
+- [x] 페이지 구성 (`/`, `/agent`, `/blog`)
+- [x] Navbar 구성 및 페이지 이동 설정
+- [x] Agent 페이지 챗봇 UI 구성
+
+---
+
+## 🔜 예정 기능 (AI 적용)
+
+- [ ] OpenAI GPT 연동 (질문 → 답변 + 영상 + 링크 추천)
+- [ ] Agent 응답 결과 기반 YouTube 자동 검색
+- [ ] 블로그 글 작성 및 저장 기능 (관리자용)
+- [ ] 로그인 없이도 간단히 사용 가능한 UX 구성
+- [ ] Vercel 또는 GCP를 통한 실제 배포
+
+---
+
+## 💡 향후 확장 아이디어
+
+- 음성 입력 기능 (시니어 친화형)
+- 지역 기반 복지 검색
+- 알림 구독 서비스 (새로운 정책 나오면 이메일 또는 문자로 안내)
+- 자녀가 부모님의 복지상태를 함께 확인할 수 있는 가족 대시보드
+
+---
+
+## 🙋‍♂️ 개발자
+
+**박경현 (Park Kyunghyun)**  
+- GitHub: [@parkkunghyun](https://github.com/parkkunghyun)  
+- 이메일: rudgus4620@gmail.com  
+- 목표: SaaS를 직접 기획, 개발, 마케팅, 배포까지 하며 디지털 노마드로 성장하는 것 🚀
+
